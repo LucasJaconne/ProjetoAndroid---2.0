@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@font-face {
+    font-family: 'idroid' ;
+    src: url(font/IDroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+main a::after {
+    content: ' 🔗';
+}
+main li::before {
+    content: '✔ ';
+}
+
+main a {
+    text-decoration: none;
+    color: #1B4332;
+    font-family: var(--fonte1);
+    font-weight: bold;
+    background-color: var(--cor4);
+    padding: 2px 6px;
+}
+main a:hover {
+    text-decoration: underline;
+}
+
+:root {
+    --cor0: #f6ffe8;
+    --cor1: #DDE7C7;
+    --cor2: #BFD8BD;
+    --cor3: #98C9A3;
+    --cor4: #77BFA3;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'ubuntu';
+    --fonte2: 'idroid';
+}
+
+body {
+    background-color: rgb(229, 240, 228);
+}
+
+header {
+    background-image: linear-gradient(to bottom, #1B4332, #2D6A4F);
+    height: 190px;
+    box-shadow: 2px 2px 5px black;
+    
+}
+
+header, #container {
+    display: flex; /*A propriedade display: flex; cria um contexto flexível para os elementos filhos dentro do container. Isso permite que você controle a distribuição, alinhamento, espaçamento e dimensionamento dos elementos filhos de maneira mais flexível e responsiva.*/
+    flex-direction: row;
+    /*Coloca eles na mesma posição na horizontal.*/
+    align-items: center;
+    /*Alinha os elementos no meio*/
+    justify-content: space-between;
+    /*Coloca os dois itens nas extremidades*/
+    padding: 0 5% 0 5%;    
+    min-height: 100%; /* Define uma altura mínima para ocupar a altura da tela */
+}
+
+
+header > h1  {
+    font-family: var(--fonte2);
+    font-size: 40px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+
+
+#container  {
+   justify-content: space-between; 
+   padding: 20px;
+}
+
+#container a {
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+@media (max-width: 780px) {
+    #container {
+        flex-direction: column;
+        
+           
+    }
+}
+ 
+
+
+nav > a {
+    
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: var(--fonte1);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.212);
+    
+    
+}
+
+nav > a:hover {
+    color: rgb(175, 211, 175);
+    transition-duration: 0.3s; /* usado para diminuir o tempo de animação*/
+    text-shadow: 1px 1px 2px rgba(233, 233, 233, 0.212);
+    
+}
+
+main {
+
+    background-color: var(--cor0);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.418);
+}
+
+#titulo1 {
+    padding: 20px;
+}
+
+#titulo1 > h2 {
+    font-family: var(--fonte2);
+    font-size: 30px;
+    color: #1B4332;
+}
+
+main  p {
+    font-family: var(--fonte1);
+    text-indent: 30px;
+    line-height: 1.7em;
+    padding: 20px 0px;
+    
+}
+
+main h3 {
+    font-family: var(--fonte2);
+    background-image: linear-gradient(to right, var(--cor3), var(--cor0));
+    padding: 3px 0px 3px 5px;
+}
+
+#titulo2 {
+    padding: 0px 20px 20px 20px;
+}
+
+#dan {
+    width: 100%;
+}
+
+#titulo3 {
+    padding: 0px 20px 20px 20px;
+}
+
+#irina{
+    width: 100%;
+}
+
+#bug{
+    width: 30%;
+    display: flex;
+    margin: auto;
+}
+
+#container-video {
+    min-height: 50px;
+    min-width: 300px;
+    background-color: #1B4332;
+
+}
+
+#video {
+    display: flex;
+    margin: auto;
+    width: 95%;
+    height: 500px;
+    padding: 20px 0px;
+    
+}
+
+#titulo4{
+    background-color: #b3ebbf;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.432);
+}
+
+#titulo4 > h4 {
+    padding: 10px 10px;
+    font-family: var(--fonte1);
+    color: white;
+    font-size: 20px;
+    background-color: #1B4332;
+    border-radius: 15px 15px 0px 0px;
+    
+}
+
+#titulo4 > p {
+    padding: 10px 20px;
+    font-family: var(--fonte1);
+}
+
+
+#l1 {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+
+}
+
+#l2 {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin-left: 300px;
+}
+
+@media (max-width: 700px) {
+    #l1, #l2 {
+        display:block;
+        
+    }
+    #l2 {
+        margin-left: 15px;
+    }
+}
+
+#p_final {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #1B4332;
+    color: white;
+    padding: 5px 0px;
+    text-align: center;
+    font-family: var(--fonte1);
+    margin-top: 30px;
+}
