@@ -146,12 +146,16 @@ main {
 
 #titulo1 {
     padding: 20px;
+    
 }
 
-#titulo1 > h2 {
+#titulo1 > h1 {
     font-family: var(--fonte2);
-    font-size: 30px;
-    color: #1B4332;
+    font-size: 40px;
+    color: #173328;
+    text-align: center;
+    padding-bottom: 20px;
+    
 }
 
 main  p {
@@ -160,103 +164,26 @@ main  p {
     font-size: 18px;
     line-height: 1.7em;
     padding: 20px 0px;
+    padding-left: 15px;
     
 }
 
-main h3 {
+main h2 {
     font-family: var(--fonte2);
     background-image: linear-gradient(to right, var(--cor3), var(--cor0));
     padding: 3px 0px 3px 5px;
 }
 
-#titulo2 {
-    padding: 0px 20px 20px 20px;
-}
-
-#dan {
-    width: 100%;
-}
-
-#titulo3 {
-    padding: 0px 20px 20px 20px;
-}
-
-#irina{
-    width: 100%;
-}
-
-#bug{
-    width: 30%;
-    display: flex;
-    margin: auto;
-}
-
-#container-video {
-    min-height: 50px;
-    min-width: 300px;
-    background-color: #1B4332;
-
-}
-
-#video {
-    display: flex;
-    margin: auto;
-    width: 95%;
-    height: 500px;
-    padding: 20px 0px;
-    
-}
-
-#titulo4{
-    background-color: #b3ebbf;
-    border-radius: 15px;
-    margin: 20px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.432);
-}
-
-#titulo4 > h4 {
-    padding: 10px 10px;
-    font-family: var(--fonte1);
-    color: white;
-    font-size: 20px;
-    background-color: #1B4332;
-    border-radius: 15px 15px 0px 0px;
-    
-}
-
-#titulo4 > p {
-    padding: 10px 20px;
-    font-family: var(--fonte1);
-}
 
 
 #l1 {
     text-decoration: none;
     list-style: none;
-    display: inline-block;
+    font-size: 18px;
+    line-height: 1.8em;
+    font-weight: bold;
     margin-left: 15px;
 
-}
-
-#l2 {
-    text-decoration: none;
-    list-style: none;
-    display: inline-block;
-    margin-left: 300px;
-}
-
-@media (max-width: 700px) {
-    #l1, #l2 {
-        display:block;
-        
-    }
-    #l2 {
-        margin-left: 15px;
-    }
-}
-
-#p_final {
-    padding-left: 20px;
 }
 
 footer {
